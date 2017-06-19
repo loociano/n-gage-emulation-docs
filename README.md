@@ -1,5 +1,7 @@
 # N-Gage Emulation Docs
 
+![ ](https://github.com/loociano/N-Gage-emu-docs/blob/master/ngage-motherboard.png?raw=true)
+
 ## Specs
 
 * CPU: [ARM920T](https://en.wikipedia.org/wiki/ARM9#ARM920T) @ 104 MHz
