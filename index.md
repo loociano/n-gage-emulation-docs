@@ -2,7 +2,11 @@
 
 ![ ](https://github.com/loociano/N-Gage-emu-docs/blob/master/ngage-motherboard.png?raw=true)
 
-## Specs
+## Emulators
+
+* [NGEmu](https://github.com/NGEmu/NGEmu) HLE N-Gage emulator written in C++ for Windows
+
+## System Specs
 
 * CPU: [ARM920T](https://en.wikipedia.org/wiki/ARM9#ARM920T) @ 104 MHz
   + ARM9T Technical Reference Manual [PDF](http://www.atmel.com/Images/ARM_920T_TRM.pdf) · [HTML](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0151c/I1004722.html)
@@ -27,7 +31,7 @@
 * S60 3rd Edition SDK for Symbian OS 9.2, Feature Pack 1, v1.0.1 [s60v3.1_SDK.zip](http://www.mediafire.com/file/9uc7fjb2ynmxlud/s60v3.1_SDK.zip)
 * S60 3rd Edition SDK for Symbian OS, Feature Pack 2 v1.1 [S60_SDK_3.2_v1.1.1_en.zip](http://www.mediafire.com/file/p0boxl3gy9opw9u/S60_SDK_3.2_v1.1.1_en.zip)
 
-## Building a S60 Application on Windows
+### Building a S60 Application on Windows
 
 Check that `devices` and `epoc` commands are working.
 
@@ -38,6 +42,56 @@ cd C:\Symbian\9.1\S60_3rd\S60Ex\helloworldbasic\group
 bldmake bldfiles
 abld build
 epoc
+```
+
+## ROM Header
+
+_Extracted from NGEmu_
+
+```
+0x0000 UID1
+0x0004 UID2
+0x0008 UID3
+0x000c UID checksum
+0x0010 Signature
+0x0014 CPU
+0x0018 Code checksum
+0x001c Data checksum
+0x0020 Build (minor)
+0x0022 Build (major)
+0x0024 Timestamp (msb)
+0x0028 Timestamp (lsb)
+0x002c Flags
+0x0030 Code size
+0x0034 Data size
+0x0038 Heap minimum size
+0x003c Heap maximum size
+0x0040 Stack size
+0x0044 BSS size
+0x0048 Entry point offset
+0x004c Code base address
+0x0050 Data base address
+0x0054 DLL count
+0x0058 Export offset
+0x005c Export count
+0x0060 Text size
+0x0064 Code offset
+0x0068 Data offset
+0x006c Import offset
+0x0070 Code relocation offset
+0x0074 Data relocation offset
+0x007c Priority 
+```
+Flags:
+```
+Bit 28-32: Import format
+Bit 24-27: Header format
+Bit 8-23: ???
+Bit 5-7: Entry point type
+Bit 3-4: ABI
+Bit 2: Fixed address
+Bit 1: Call entry point
+Bit 0: Executable type
 ```
 
 ## References
