@@ -44,7 +44,16 @@ abld build
 epoc
 ```
 
-## ROM Header
+## ROM disassembly
+
+```
+.sis = Application Installation file
+  .app = Application
+  .rsc = Resource binary
+  .aif = Icon bitmaps
+```
+
+### ROM Header
 
 _Extracted from NGEmu_
 
@@ -93,6 +102,19 @@ Bit 2: Fixed address
 Bit 1: Call entry point
 Bit 0: Executable type
 ```
+
+#### UIDs
+
+Symbian OS uses Unique IDentifiers (UID) for identifying components. Each component is identified by three 32-bit UID inte-
+gers: UID1, UID2 and UID3.
+
+* UID1: specifies the type of component. 
+```
+0x1000007a = Executable (EXE)
+0x10000079 = Library (DLL)
+```
+* UID2: more specific type of component. It can be zero if UID1 is `EXE`.
+* UID3: it is the most specific identifier, must be unique. It can be zero if UID1 is `EXE`.
 
 ## References
 
