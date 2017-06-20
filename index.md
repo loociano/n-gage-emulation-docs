@@ -25,19 +25,34 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 ### Downloads 
 
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip)
-  + Requirements: Java 2 Runtime Environment 1.3.1, Microsoft Visual C++ 6.0, Active Perl 5.1.8 
+  + Minimum requirements: [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html), [Microsoft Visual C++ 6.0](https://www.microsoft.com/en-ie/download/details.aspx?id=9183), [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
 
 ### Building a S60 Application on Windows
 
-Check that `devices` and `epoc` commands are working.
-
-Build:
-
+Check that `perl`, `java`, `nmake` and `epoc` commands are working.
 ```
-cd C:\Symbian\9.1\S60_3rd\S60Ex\helloworldbasic\group
+perl -version
+java -version
+nmake /HELP
+epoc
+```
+To build for the emulator
+```
+cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
 bldmake bldfiles
 abld build
+```
+Run the emulator:
+```
 epoc
+```
+To build for the actual device
+```
+cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
+bldmake bldfiles
+abld build armi urel
+cd ..\
+makesis helloworld.pkg
 ```
 
 ## ROM disassembly
