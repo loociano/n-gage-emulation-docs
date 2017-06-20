@@ -31,37 +31,80 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 Check that `perl`, `java`, `nmake` and `epoc` commands are working.
 ```
-perl -version
-java -version
-nmake /HELP
-epoc
+$ perl -version
+$ java -version
+$ nmake /HELP
+$ epoc
 ```
 To build for the emulator
 ```
-cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
-bldmake bldfiles
-abld build
+$ cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
+$ bldmake bldfiles
+$ abld build
 ```
 Run the emulator:
 ```
-epoc
+$ epoc
 ```
 To build for the actual device
 ```
-cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
-bldmake bldfiles
-abld build armi urel
-cd ..\
-makesis helloworld.pkg
+$ cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
+$ bldmake bldfiles
+$ abld build armi urel
+$ cd ..\
+$ makesis helloworld.pkg
 ```
 
-## ROM disassembly
+## File Formats
 
 ```
 .sis = Application Installation file
-  .app = Application
+  .app = Application (E32Image)
   .rsc = Resource binary
   .aif = Icon bitmaps
+```
+
+* [E32Image (.app)](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
+* [Multibitmap (.mbm)](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
+* [Application Information File (.aif)](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
+* [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
+* [Deark](http://entropymine.com/deark/): .mbm to .png converter
+
+Use utility `bmconv` from SDK to extract images from .mbm:
+```
+$ bmconv /v images.mbm
+
+BMCONV version 103.
+images.mbm is a File store containing 3 bitmaps
+
+Bitmap 1 information:
+Pixel size 176 x 44
+Twips size 352 x 88
+24 Bpp Colour
+24 bit RLE compression 72%
+
+Bitmap 2 information:
+Pixel size 176 x 44
+Twips size 352 x 88
+24 Bpp Colour
+24 bit RLE compression 72%
+
+Bitmap 3 information:
+Pixel size 176 x 208
+Twips size 263 x 311
+24 Bpp Colour
+24 bit RLE compression 15%
+
+$ bmconv /u images.mbm 1.bmp 2.bmp 3.bmp
+
+BMCONV version 103.
+Decompiling...
+Epoc file: images.mbm
+
+Bitmap file 1   : 1.bmp
+Bitmap file 2   : 2.bmp
+Bitmap file 3   : 3.bmp
+Success.
 ```
 
 ### ROM Header
