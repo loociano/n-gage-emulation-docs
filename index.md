@@ -2,9 +2,10 @@
 
 ![ ](https://github.com/loociano/N-Gage-emu-docs/blob/master/ngage-motherboard.png?raw=true)
 
-## Emulators
+## Emulators and Tools
 
-* [NGEmu](https://github.com/NGEmu/NGEmu) HLE N-Gage emulator written in C++ for Windows
+* [NGEmu](https://github.com/NGEmu/NGEmu) by [@tambry](https://github.com/tambry): HLE N-Gage emulator written in C++ for Windows
+* [Rusty Starship](https://gitlab.com/tambre/rusty-starship) by [@tambre](https://gitlab.com/tambre): Collection of tools
 
 ## System Specs
 
