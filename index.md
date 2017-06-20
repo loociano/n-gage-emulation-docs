@@ -70,6 +70,18 @@ $ makesis helloworld.pkg
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 * [Deark](http://entropymine.com/deark/): .mbm to .png converter
 
+Use `deark` to extract images from .aif:
+```
+$ deark file.aif
+
+Module: epocimage
+Format: EPOC AIF
+Error: Unsupported bits/pixel (1) for grayscale image
+Writing output.000.png
+Error: Unsupported bits/pixel (1) for grayscale image
+Writing output.001.png
+```
+
 Use utility `bmconv` from SDK to extract images from .mbm:
 ```
 $ bmconv /v images.mbm
