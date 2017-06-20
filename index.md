@@ -1,4 +1,5 @@
 # N-Gage Emulation Docs
+_Work in Progress by [@loociano](https://github.com/loociano), last update on June 2017_
 
 ![ ](https://github.com/loociano/N-Gage-emu-docs/blob/master/ngage-motherboard.png?raw=true)
 
