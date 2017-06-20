@@ -118,6 +118,7 @@ Bitmap file 2   : 2.bmp
 Bitmap file 3   : 3.bmp
 Success.
 ```
+* [Tutorial: How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
 ### ROM Header
 
@@ -186,3 +187,4 @@ gers: UID1, UID2 and UID3.
 
 * [N-Gage (device) - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
 * [N-Gage QD - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
+* [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
