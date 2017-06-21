@@ -3,7 +3,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 ![ ](https://raw.githubusercontent.com/loociano/N-Gage-emu-docs/master/img/ngage-motherboard.png)
 
-# Contents
+## Contents
 
 - [N-Gage Emulation Docs](#n-gage-emulation-docs)
   - [Emulators and Tools](#emulators-and-tools)
