@@ -83,17 +83,10 @@ $ makesis helloworld.pkg
 
 ## File Formats
 
-* `.sis` [SIS File Format](http://www.thouky.co.uk/sis.html)
-* `.app` [E32Image](http://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10)
-* `.mbm` [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
-* `.aif` [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
-* [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
-
-### File formats used by Games
-
-* .app
-* .aif
-* .mbm
+* .sis [SIS File Format](http://www.thouky.co.uk/sis.html)
+* .app [E32Image](http://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10)
+* .mbm [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
+* .aif [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * .rsc
 * .dll
 * .dat
@@ -101,18 +94,46 @@ $ makesis helloworld.pkg
 * .vpxh
 * .ngf
 * .tkmf
+* .txt
+* .amr
+* .wav
+* .bin
+* .off
+* .cwa
 
-File formats used by a single game
+* [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
+
+### File formats used by a single game
 
 * .cfl (Alien Front)
 * .lib (Alien Front)
-* .off (Asphalt Urban GT)
-* .cwa (Asphalt Urban GT 2)
 * .rle (Asphalt Urban GT 2)
 * .sbi (Barakel)
 * .gra (Bomberman)
 * .snd (Bomberman)
-
+* .s (Call of Duty)
+* .ogg (Call of Duty)
+* .ent (Call of Duty)
+* .msk (Call of Duty)
+* .pal (Call of Duty)
+* .pth (Call of Duty)
+* .sur (Call of Duty)
+* .zcp (Call of Duty)
+* .zfg (Call of Duty)
+* .zlu (Call of Duty)
+* .zmp (Call of Duty)
+* .zon (Call of Duty)
+* .zsk (Call of Duty)
+* .ztx (Call of Duty)
+* .npk (Catan)
+* .gdr (Civilazation)
+* .dz (Colin McRae Rally 2005)
+* .nax (Colin McRae Rally 2005)
+* .gob (Crash Bandicoot)
+* .xrl (FIFA 2004)
+* .cs (Flo Boarding)
+* .cs.tst (Flo Boarding)
+* .hdr (Glimmerati)
 
 ### Utilities
 
