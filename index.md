@@ -91,10 +91,12 @@ $ makesis helloworld.pkg
 
 ### File formats by Games
 
-| Game          | .app | .aif | .rsc | .cfl | .dll | .lib | .dat |
-| ------------- |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| Alien Front   |✔     |✔     |✘     |✔    |✔     |✔     |✘    |
-| Ashen         |✔     |✔     |✔     |✘    |✔     |✘     |✔     |
+| Game               |`.app`|`.aif`|`.rsc`|`.cfl`|`.dll`|`.lib`|`.dat`|`.off`|`.cwa`|`.rle`|
+| ------------------ |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Alien Front        |✔     |✔     |✘     |✔    |✔     |✔     |✘    |✘     |✘     |✘     |
+| Ashen              |✔     |✔     |✔     |✘    |✔     |✘     |✔    |✘     |✘     |✘     |
+| Asphalt Urban GT   |✔     |✔     |✔     |✘    |✔     |✘     |✔    |✔     |✘     |✘     |
+| Asphalt Urban GT 2 |✔     |✔     |✔     |✘    |✔     |✘     |✔    |✘     |✔     |✔     |
 
 ### Utilities
 
