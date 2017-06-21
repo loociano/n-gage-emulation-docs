@@ -89,6 +89,12 @@ $ makesis helloworld.pkg
 * `.aif` [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 
+### File formats by Games
+
+| Game          | .app | .aif |
+| ------------- |:----:|:----:|
+| Alien Front   |   Y  |  Y   |
+
 ### Utilities
 
 * [Deark](http://entropymine.com/deark/) uncompresses `.mbm` into multiple `.png`
@@ -210,4 +216,5 @@ gers: UID1, UID2 and UID3.
 
 * [N-Gage (device) - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
 * [N-Gage QD - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
+* [List of N-Gage games – Wikipedia](https://en.wikipedia.org/wiki/List_of_N-Gage_games)
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
