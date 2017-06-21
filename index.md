@@ -84,7 +84,7 @@ $ makesis helloworld.pkg
 ## File Formats
 
 * `.sis` [SIS File Format](http://www.thouky.co.uk/sis.html)
-* `.app` [E32Image](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
+* `.app` [E32Image](http://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10)
 * `.mbm` [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
 * `.aif` [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
