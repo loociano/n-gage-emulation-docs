@@ -89,18 +89,30 @@ $ makesis helloworld.pkg
 * `.aif` [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 
-### File formats by Games
+### File formats used by Games
 
-| Game                     |`.app`|`.aif`|`.mbm`|`.rsc`|`.cfl`|`.dll`|`.lib`|`.dat`|`.off`|`.cwa`|`.rle`|`.cfg`|`.vpxh`|`.ngf`|`.tkmf`|`.sbi`|`.gra`|`.snd`|
-| ------------------------ |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:-----:|:----:|:-----:|:----:|:----:|:----:|:----:|
-| Alien Front              |✔     |✔     |✘     |✘     |✔     |✔     |✔     |✘     |✘     |✘     |✘     |✘      |✘      |✘     |✘      |✘    |✘     |✘     |
-| Ashen                    |✔     |✔     |✘     |✔     |✘     |✔     |✘     |✔     |✘     |✘     |✘     |✘      |✘      |✘     |✘      |✘    |✘     |✘     |
-| Asphalt Urban GT         |✔     |✔     |✘     |✔     |✘     |✔     |✘     |✔     |✔     |✘     |✘     |✘      |✘      |✘     |✘      |✘    |✘     |✘     |
-| Asphalt Urban GT 2       |✔     |✔     |✘     |✔     |✘     |✔     |✘     |✔     |✘     |✔     |✔     |✘      |✘      |✘     |✘      |✘    |✘     |✘     |
-| Atari Masterpieces Vol.1 |✔     |✔     |✔     |✔     |✘     |✔     |✘     |✘     |✘     |✘     |✘     |✔      |✔      |✔     |✔      |✘    |✘     |✘     |
-| Atari Masterpieces Vol.2 |✔     |✔     |✔     |✔     |✘     |✔     |✘     |✘     |✘     |✘     |✘     |✔      |✔      |✔     |✔      |✘    |✘     |✘     |
-| Barakel                  |✔     |✔     |✔     |✔     |✘     |✔     |✘     |✔     |✘     |✘     |✘     |✔      |✘      |✘     |✘      |✔    |✘     |✘     |
-| Bomberman                |✔     |✔     |✘     |✔     |✘     |✘     |✘     |✘     |✘     |✘     |✘     |✘      |✘      |✘     |✘      |✘    |✔     |✔     |
+* .app
+* .aif
+* .mbm
+* .rsc
+* .dll
+* .dat
+* .cfg
+* .vpxh
+* .ngf
+* .tkmf
+
+File formats used by a single game
+
+* .cfl (Alien Front)
+* .lib (Alien Front)
+* .off (Asphalt Urban GT)
+* .cwa (Asphalt Urban GT 2)
+* .rle (Asphalt Urban GT 2)
+* .sbi (Barakel)
+* .gra (Bomberman)
+* .snd (Bomberman)
+
 
 ### Utilities
 
