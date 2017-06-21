@@ -91,9 +91,10 @@ $ makesis helloworld.pkg
 
 ### File formats by Games
 
-| Game          | .app | .aif |
-| ------------- |:----:|:----:|
-| Alien Front   |   Y  |  Y   |
+| Game          | .app | .aif | .rsc | .cfl | .dll | .lib | .dat |
+| ------------- |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Alien Front   |✔     |✔     |✘     |✔    |✔     |✔     |✘    |
+| Ashen         |✔     |✔     |✔     |✘    |✔     |✘     |✔     |
 
 ### Utilities
 
