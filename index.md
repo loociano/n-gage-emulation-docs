@@ -1,7 +1,7 @@
 # N-Gage Emulation Docs
 _Work in Progress by [@loociano](https://github.com/loociano), last update on June 2017_
 
-![ ](https://github.com/loociano/N-Gage-emu-docs/blob/master/ngage-motherboard.png?raw=true)
+![ ](https://raw.githubusercontent.com/loociano/N-Gage-emu-docs/master/img/ngage-motherboard.png)
 
 ## Emulators and Tools
 
@@ -22,7 +22,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 * [S60 versions and supported devices (Wikipedia)](https://en.wikipedia.org/wiki/S60_(software_platform)#Versions_and_supported_devices)
 * [Getting Started with C++ Development on the Series 60 SDK (Web Archive, 2002)](https://web.archive.org/web/20050228053950/http://www.symbian.com/developer/techlib/papers/series60/series60.html)
 
-### Downloads 
+### Downloads
 
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip)
   + Minimum requirements: [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html), [Microsoft Visual C++ 6.0](https://www.microsoft.com/en-ie/download/details.aspx?id=9183), [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
@@ -156,7 +156,7 @@ _Extracted from NGEmu_
 0x006c Import offset
 0x0070 Code relocation offset
 0x0074 Data relocation offset
-0x007c Priority 
+0x007c Priority
 ```
 Flags:
 ```
@@ -175,7 +175,7 @@ Bit 0: Executable type
 Symbian OS uses Unique IDentifiers (UID) for identifying components. Each component is identified by three 32-bit UID inte-
 gers: UID1, UID2 and UID3.
 
-* UID1: specifies the type of component. 
+* UID1: specifies the type of component.
 ```
 0x1000007a = Executable (EXE)
 0x10000079 = Library (DLL)
