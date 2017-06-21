@@ -3,6 +3,20 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 ![ ](https://raw.githubusercontent.com/loociano/N-Gage-emu-docs/master/img/ngage-motherboard.png)
 
+# Contents
+
+- [N-Gage Emulation Docs](#n-gage-emulation-docs)
+  - [Emulators and Tools](#emulators-and-tools)
+  - [System Specs](#system-specs)
+  - [S60](#s60)
+    - [Downloads](#downloads)
+    - [Development workflow on Windows](#development-workflow-on-windows)
+  - [File Formats](#file-formats)
+    - [Utilities](#utilities)
+    - [E32Image Header](#e32image-header)
+      - [UIDs](#uids)
+  - [References](#references)
+
 ## Emulators and Tools
 
 * [NGEmu](https://github.com/NGEmu/NGEmu) by [@tambry](https://github.com/tambry): HLE N-Gage emulator written in C++ for Windows
@@ -57,15 +71,15 @@ $ makesis helloworld.pkg
 
 ## File Formats
 
-* .sis [SIS File Format](http://www.thouky.co.uk/sis.html)
-* .app [E32Image](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
-* .mbm [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
-* .aif [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
+* `.sis` [SIS File Format](http://www.thouky.co.uk/sis.html)
+* `.app` [E32Image](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
+* `.mbm` [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
+* `.aif` [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 
 ### Utilities
 
-* [Deark](http://entropymine.com/deark/): .mbm to .png converter
+* [Deark](http://entropymine.com/deark/) uncompresses `.mbm` into multiple `.png`
 
 Use `deark` to extract images from .aif:
 ```
