@@ -27,7 +27,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip)
   + Minimum requirements: [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html), [Microsoft Visual C++ 6.0](https://www.microsoft.com/en-ie/download/details.aspx?id=9183), [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
 
-### Building a S60 Application on Windows
+### Development workflow on Windows
 
 Check that `perl`, `java`, `nmake` and `epoc` commands are working.
 ```
@@ -57,17 +57,14 @@ $ makesis helloworld.pkg
 
 ## File Formats
 
-```
-.sis = Application Installation file
-  .app = Application (E32Image)
-  .rsc = Resource binary
-  .aif = Icon bitmaps
-```
-
-* [E32Image (.app)](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
-* [Multibitmap (.mbm)](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
-* [Application Information File (.aif)](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
+* .sis [SIS File Format](http://www.thouky.co.uk/sis.html)
+* .app [E32Image](http://web.archive.org/web/20070616175615/http://www.antonypranata.com/articles/e32fileformat.html)
+* .mbm [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
+* .aif [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
+
+### Utilities
+
 * [Deark](http://entropymine.com/deark/): .mbm to .png converter
 
 Use `deark` to extract images from .aif:
@@ -120,9 +117,7 @@ Success.
 ```
 * [Tutorial: How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
-### ROM Header
-
-_Extracted from NGEmu_
+### E32Image Header
 
 ```
 0x0000 UID1
@@ -158,7 +153,9 @@ _Extracted from NGEmu_
 0x0074 Data relocation offset
 0x007c Priority
 ```
+
 Flags:
+
 ```
 Bit 28-32: Import format
 Bit 24-27: Header format
