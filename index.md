@@ -243,6 +243,7 @@ gers: UID1, UID2 and UID3.
 ## Tutorials
 
 * [How to build helloworld on S60](http://loociano.github.io/N-Gage-emu-docs/tutorials/how-to-build-helloworld-on-s60.html)
+* [How to compile and decompile mbm files](http://loociano.github.io/N-Gage-emu-docs/tutorials/how-to-compile-and-decompile-mbm-files.html)
 * [How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
 ## References
