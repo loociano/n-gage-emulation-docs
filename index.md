@@ -7,6 +7,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 - [Emulators and Tools](#emulators-and-tools)
 - [System Specs](#system-specs)
+- [Memory Map](#memory-map)
 - [S60](#s60)
   - [SDK](#sdk)
 - [File Formats](#file-formats)
@@ -15,6 +16,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
     - [UIDs](#uids)
 - [Tutorials](#tutorials)
 - [References](#references)
+- [Thanks](#thanks)
 
 ## Emulators and Tools
 
@@ -28,6 +30,32 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 * Memory: 3.4 MB internal memory, MultiMediaCard (MMC) external memory
 * OS: [Series 60](https://en.wikipedia.org/wiki/S60_(software_platform)) 1st Edition, Feature Pack 1 (S60 1.2, or Symbian OS 6.1)
 * Display: TFT 176x208 pixels, 4096 colors
+
+## Memory Map
+
+Virtual Address Map:
+
+```
+0x0040 0000 - 0x2FFF FFFF  : User Data
+0x3000 0000 - 0x3FFF FFFF  : Static data for Java
+0x4000 0000 - 0x4000 1FFF  : Super page + CPU page
+0x4001 0000 - 0x4001 0FFF  : Shadow RAM page temporary address
+0x4100 0000 - 0x4100 3FFF  : Page Directory
+0x4108 0000 - 0x4108 3FFF  : Page table info
+0x4200 0000 - 0x423F FFFF  : Page tables
+0x5000 0000 - 0x57FF FFFF  : ROM image
+0x5800 0000 - 0x5EFF FFFF  : Memory-mapped I/O
+0x5F00 0000 - 0x5FFF FFFF  : Video RAM
+0x6000 0000 - 0x7FFF FFFF  : RAM
+0x8000 0000 - 0xXXXX XXXX  : Kernel data/bss section
+0xXXXX XXXX - 0xXXXX XXXX  : Reentrant/IRQ/FIQ/Null/Exception kernel stack
+0xXXXX XXXX - 0xXXXX XXXX  : Fixed chunks data for ROM fixed processes
+0xXXXX XXXX - 0xXXXX XXXX  : Kernel server heap and stack
+0xXXXX XXXX - 0xXXXX XXXX  : Home Section / All Processes
+0xXXXX XXXX - 0xXXXX XXXX  : RAM-loaded EXE & DLL code
+0xFFF0 0000 - 0xFFFE FFFF  : Empty
+0xFFFF 0000 - 0xFFFF FFFF  : Vectors
+```
 
 ## S60
 
@@ -219,7 +247,11 @@ gers: UID1, UID2 and UID3.
 
 ## References
 
-* [N-Gage (device) - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
-* [N-Gage QD - Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
+* [N-Gage – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
+* [N-Gage QD – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
 * [List of N-Gage games – Wikipedia](https://en.wikipedia.org/wiki/List_of_N-Gage_games)
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
+
+## Thanks
+
+[@tambre](https://gitlab.com/tambre), [@mrRosset](https://github.com/mrRosset), [THC.org](http://www.thc.org).
