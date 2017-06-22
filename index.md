@@ -87,19 +87,19 @@ $ makesis helloworld.pkg
 * .app [E32Image](http://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10)
 * .mbm [Multibitmap](http://fileformats.archiveteam.org/wiki/EPOC_MBM)
 * .aif [Application Information File](http://fileformats.archiveteam.org/wiki/EPOC_AIF)
-* .rsc
-* .dll
-* .dat
-* .cfg
-* .vpxh
-* .ngf
-* .tkmf
-* .txt
-* .amr
-* .wav
-* .bin
-* .off
-* .cwa
+* .rsc [Resource file](https://www.reviversoft.com/file-extensions/rsc) (compiled from .rss)
+* .dll Dynamic-link library
+* .txt Plain text file (ASCII encoding)
+* .amr Adaptive Multi-Rate codec
+* .wav Waveform Audio File Format
+* .bin Binary file
+* .dat ?
+* .cfg ?
+* .vpxh ?
+* .ngf ?
+* .tkmf ?
+* .off ?
+* .cwa ?
 
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 
