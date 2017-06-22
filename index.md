@@ -22,13 +22,17 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 * [NGEmu](https://github.com/NGEmu/NGEmu) by [@tambry](https://github.com/tambry): HLE N-Gage emulator written in C++ for Windows
 * [Rusty Starship](https://gitlab.com/tambre/rusty-starship) by [@tambre](https://gitlab.com/tambre): Collection of tools
+* [Deark](http://entropymine.com/deark/) to extract and convert images to `.png` from an multibitmap `.mbm` or `.aif`
+* S60 SDK Utilities:
+  * `bmconv` to extract images from a multibitmap `.mbm`
+  * `petran` to read E32Image
 
 ## System Specs
 
 * CPU: [ARM920T](https://en.wikipedia.org/wiki/ARM9#ARM920T) @ 104 MHz
   + ARM9T Technical Reference Manual [PDF](http://www.atmel.com/Images/ARM_920T_TRM.pdf) · [HTML](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0151c/I1004722.html)
 * Memory: 3.4 MB internal memory, MultiMediaCard (MMC) external memory
-* OS: [Series 60](https://en.wikipedia.org/wiki/S60_(software_platform)) 1st Edition, Feature Pack 1 (S60 1.2, or Symbian OS 6.1)
+* OS: [S60](https://en.wikipedia.org/wiki/S60_(software_platform)) 1st Edition, Feature Pack 1 (S60 1.2, or Symbian OS 6.1)
 * Display: TFT 176x208 pixels, 4096 colors
 
 ## Memory Map
@@ -90,8 +94,6 @@ Virtual Address Map:
 * .off ?
 * .cwa ?
 
-* [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
-
 ### File formats used by a single game
 
 * .cfl (Alien Front)
@@ -125,8 +127,6 @@ Virtual Address Map:
 * .hdr (Glimmerati)
 
 ### Utilities
-
-* [Deark](http://entropymine.com/deark/) uncompresses `.mbm` into multiple `.png`
 
 Use `deark` to extract images from .aif:
 ```
@@ -176,7 +176,6 @@ Bitmap file 2   : 2.bmp
 Bitmap file 3   : 3.bmp
 Success.
 ```
-* [Tutorial: How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
 ### E32Image Header
 
@@ -244,6 +243,7 @@ gers: UID1, UID2 and UID3.
 ## Tutorials
 
 * [How to build helloworld on S60](http://loociano.github.io/N-Gage-emu-docs/tutorials/how-to-build-helloworld-on-s60.html)
+* [How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
 ## References
 
@@ -251,6 +251,8 @@ gers: UID1, UID2 and UID3.
 * [N-Gage QD – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
 * [List of N-Gage games – Wikipedia](https://en.wikipedia.org/wiki/List_of_N-Gage_games)
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
+* [@mrRosset's Symbian Archive](https://mrrosset.github.io/Symbian-Archive/)
+* [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
 
 ## Thanks
 
