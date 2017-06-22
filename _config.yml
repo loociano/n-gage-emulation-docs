@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 collections:
-  my_collection:
+  tutorials:
     output: true
 defaults:
   -

@@ -8,12 +8,12 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 - [Emulators and Tools](#emulators-and-tools)
 - [System Specs](#system-specs)
 - [S60](#s60)
-  - [Downloads](#downloads)
-  - [Development workflow on Windows](#development-workflow-on-windows)
+  - [SDK](#downloads)
 - [File Formats](#file-formats)
   - [Utilities](#utilities)
   - [E32Image Header](#e32image-header)
     - [UIDs](#uids)
+- [Tutorials](#tutorials)
 - [References](#references)
 
 ## Emulators and Tools
@@ -35,51 +35,12 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 * [S60 versions and supported devices (Wikipedia)](https://en.wikipedia.org/wiki/S60_(software_platform)#Versions_and_supported_devices)
 * [Getting Started with C++ Development on the Series 60 SDK (Web Archive, 2002)](https://web.archive.org/web/20050228053950/http://www.symbian.com/developer/techlib/papers/series60/series60.html)
 
-### Downloads
+### SDK
 
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip). Minimum requirements:
   * [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html)
   * Microsoft Visual C++ 6.0
   * [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
-
-### Development workflow on Windows
-
-Check that `perl`, `java`, `nmake` and `epoc` commands are working.
-```
-$ perl -version
-$ java -version
-$ nmake /HELP
-$ epoc
-```
-How to build the `Helloworld` app for the Windows Emulator:
-
-1. Go to the `group` directory
-```
-$ cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
-```
-2. Generate MAKE files. This will create MAKE files for all supported targets under `${EPOCROOT}\Epoc32\BUILD\SYMBIAN\6.1\SERIES60\SERIES60EX\HELLOWORLD\GROUP`
-```
-$ bldmake bldfiles
-```
-3. Build
-```
-$ abld build
-```
-4. Run the emulator. The application should be automatically installed
-```
-$ epoc
-```
-![](https://raw.githubusercontent.com/loociano/N-Gage-emu-docs/master/img/helloworld-emulator-1.png)
-![](https://raw.githubusercontent.com/loociano/N-Gage-emu-docs/master/img/helloworld-emulator-2.png)
-
-To build for the actual device
-```
-$ cd C:\Symbian\6.1\Series60\Series60Ex\helloworld\group
-$ bldmake bldfiles
-$ abld build armi urel
-$ cd ..\
-$ makesis helloworld.pkg
-```
 
 ## File Formats
 
@@ -251,6 +212,10 @@ gers: UID1, UID2 and UID3.
 ```
 * UID2: more specific type of component. It can be zero if UID1 is `EXE`.
 * UID3: it is the most specific identifier, must be unique. It can be zero if UID1 is `EXE`.
+
+## Tutorials
+
+* [How to build helloworld on S60](http://loociano.github.io/N-Gage-emu-docs/tutorials/how-to-build-helloworld-on-s60.html)
 
 ## References
 
