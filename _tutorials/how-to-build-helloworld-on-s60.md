@@ -1,3 +1,7 @@
+---
+title: How to build helloworld on S60
+---
+
 # How to build helloworld on S60
 
 ## Prerequisites
