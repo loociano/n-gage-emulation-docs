@@ -8,7 +8,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 - [Emulators and Tools](#emulators-and-tools)
 - [System Specs](#system-specs)
 - [S60](#s60)
-  - [SDK](#downloads)
+  - [SDK](#sdk)
 - [File Formats](#file-formats)
   - [Utilities](#utilities)
   - [E32Image Header](#e32image-header)
