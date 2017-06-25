@@ -1,0 +1,3 @@
+[submodule "symbian-sdk-doc"]
+	path = symbian-sdk-doc
+	url = https://github.com/loociano/symbian-sdk-doc.git
