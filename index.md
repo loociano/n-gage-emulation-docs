@@ -179,39 +179,40 @@ Success.
 
 ### E32Image Header
 
+[Source](https://github.com/loociano/symbian-build-tools/blob/master/e32tools/INC/E32IMAGE.H)
 ```
-0x0000 UID1
-0x0004 UID2
-0x0008 UID3
-0x000c UID checksum
+0x0000 Uid1
+0x0004 Uid2
+0x0008 Uid3
+0x000c Check                // UID checksum
 0x0010 Signature
-0x0014 CPU
-0x0018 Code checksum
-0x001c Data checksum
-0x0020 Build (minor)
-0x0022 Build (major)
+0x0014 Cpu                  // 0x1000 = X86, 0x2000 = ARM, 0x4000 = M*Core
+0x0018 CheckSumCode         // sum of all 32 bit words in .text
+0x001c CheckSumData         // sum of all 32 bit works in .data
+0x0020 Version (minor)
+0x0022 Version (major)
 0x0024 Timestamp (msb)
 0x0028 Timestamp (lsb)
-0x002c Flags
-0x0030 Code size
-0x0034 Data size
-0x0038 Heap minimum size
-0x003c Heap maximum size
-0x0040 Stack size
-0x0044 BSS size
-0x0048 Entry point offset
-0x004c Code base address
-0x0050 Data base address
-0x0054 DLL count
-0x0058 Export offset
-0x005c Export count
-0x0060 Text size
-0x0064 Code offset
-0x0068 Data offset
-0x006c Import offset
-0x0070 Code relocation offset
-0x0074 Data relocation offset
-0x007c Priority
+0x002c Flags                // 0 = exe, 1 = dll, +2 = no call entry points
+0x0030 CodeSize             // size of code, import address table, constant data and export dir
+0x0034 DataSize             // size of initialised data
+0x0038 HeapSizeMin
+0x003c HeapSizeMax
+0x0040 StackSize
+0x0044 BssSize
+0x0048 EntryPoint           // offset into code of entry point
+0x004c CodeBase             // where the code is linked for
+0x0050 DataBase             // where the data is linked for
+0x0054 DllRefTableCount     // filling this in enables E32ROM to leave space for it
+0x0058 ExportDirOffset      // offset into the file of the export address table
+0x005c ExportDirCount
+0x0060 TextSize             // size of just the text section, also doubles as the offset for the iat w.r.t. the code section
+0x0064 CodeOffset           // file offset to code section
+0x0068 DataOffset           // file offset to data section
+0x006c ImportOffset         // file offset to import section
+0x0070 CodeRelocOffset      // relocations for code and const
+0x0074 DataRelocOffset      // relocations for data
+0x007c Priority             // priority of this process
 ```
 
 Flags:
@@ -224,7 +225,7 @@ Bit 5-7: Entry point type
 Bit 3-4: ABI
 Bit 2: Fixed address
 Bit 1: Call entry point
-Bit 0: Executable type
+Bit 0: Executable type     // 0 = exe, 1 = dll
 ```
 
 #### UIDs
