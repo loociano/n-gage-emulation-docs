@@ -206,7 +206,7 @@ Success.
 0x0054 DllRefTableCount     // filling this in enables E32ROM to leave space for it
 0x0058 ExportDirOffset      // offset into the file of the export address table
 0x005c ExportDirCount
-0x0060 TextSize             // size of just the text section, also doubles as the offset for the iat w.r.t. the code section
+0x0060 TextSize             // size of just the text section
 0x0064 CodeOffset           // file offset to code section
 0x0068 DataOffset           // file offset to data section
 0x006c ImportOffset         // file offset to import section
@@ -244,6 +244,7 @@ gers: UID1, UID2 and UID3.
 ## Tutorials
 
 * [How to build helloworld on S60](http://n-gage.org/tutorials/how-to-build-helloworld-on-s60.html)
+* [Helloworld disassembly](http://n-gage.org/tutorials/helloworld-disassembly.html)
 * [How to compile and decompile mbm files](http://n-gage.org/tutorials/how-to-compile-and-decompile-mbm-files.html)
 * [How to make a standalone application (using py2sis)](http://www.mobilenin.com/pys60/info_standalone_application.htm)
 
