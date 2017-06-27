@@ -45,3 +45,9 @@ $ abld build armi urel
 $ cd ..\
 $ makesis helloworld.pkg
 ```
+
+## References
+
+1. [How to use the Symbian build process. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Common/ToolsAndUtilities/Build/HowtoBuildProcess.guide.html#PracticalGuide%2eHowtoBuildProcess)
+2. [How to use bldmake. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Common/ToolsAndUtilities/Build/UsingBldmake.guide.html#PracticalGuide%2eusing%2dbldmake)
+3. [How to use abld. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Common/ToolsAndUtilities/Build/UsingAbld.guide.html#PracticalGuide%2eusing%2dabld)

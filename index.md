@@ -256,7 +256,9 @@ gers: UID1, UID2 and UID3.
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
 * [@mrRosset's Symbian Archive](https://mrrosset.github.io/Symbian-Archive/)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
+* [Symbian OS v6.1 Edition for C++. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Product/Generic/index.html)
+* [Symbian OS v6.1 Example Code. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/examples/Examples/index.html)
 
 ## Thanks
 
-[@tambre](https://gitlab.com/tambre), [@mrRosset](https://github.com/mrRosset), [THC.org](http://www.thc.org).
+[@tambry](https://github.com/tambry), [@mrRosset](https://github.com/mrRosset), [THC.org](http://www.thc.org).
