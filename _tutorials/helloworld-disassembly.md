@@ -2,9 +2,9 @@
 title: Helloworld disassembly
 ---
 
-# Helloworld disassembly
+# Helloworld (Standard Library) disassembly
 
-Source code:
+Source code `slhello.c`:
 ```
 #include <stdio.h>
 
@@ -14,6 +14,19 @@ int main (int argc, char *argv[]) {
   printf("Hello World\n");
   return 0;
 }
+```
+
+`hello.mmp`:
+```
+TARGET      hello.exe
+TARGETTYPE  exe
+UID         0
+SOURCEPATH  .
+SOURCE      slhello.c
+SYSTEMINCLUDE   \epoc32\include\libc  \epoc32\include
+
+LIBRARY     estlib.lib euser.lib
+STATICLIBRARY   ecrt0.lib
 ```
 
 `helloworld` imports these functions from the following two libraries:
