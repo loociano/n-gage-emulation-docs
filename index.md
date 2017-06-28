@@ -212,7 +212,7 @@ Success.
 0x006c ImportOffset         // file offset to import section
 0x0070 CodeRelocOffset      // relocations for code and const
 0x0074 DataRelocOffset      // relocations for data
-0x007c Priority             // priority of this process
+0x0078 Priority             // priority of this process
 ```
 
 Flags:

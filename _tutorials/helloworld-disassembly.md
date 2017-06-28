@@ -16,7 +16,99 @@ int main (int argc, char *argv[]) {
 }
 ```
 
-Petran analysis:
+`helloworld` imports these functions from the following two libraries:
+
+* `estlib.dll`
+  + 73 `printf`
+  + 104 `exit` (implicit)
+  + 262 `_crt0__FRiRPPcT1` (implicit)
+* `euser.dll`
+  + 746 `New__12CTrapCleanup` (implicit)
+
+Compiled E32ImageFile, explained:
+```
+Header: from 0 to 0x7c (code offset)
+
+7a00 0010 = Uid1 (0x1000007a)
+0000 0000 = Uid2 (0)
+0000 0000 = Uid3 (0)
+9ec3 5a04 = iCheck (0x5a04c39e)
+4550 4f43 = Signature, 'EPOC' in ASCII
+0020 0000 = ARM CPU (0x2000)
+b1ed 6d24 = Checksum code (0x246dedb1)
+0000 0000 = Checksum data (0)
+0100 af00 = PETRAN version (Build=0xaf Minor=0, Mayor=1 = Version 1 Build 175)
+4033 5cb3 9630 e200 = timestamp (0xe23096 0xb35c3340)
+0200 0000 = Flags (0x2 = no call of entry points)
+9001 0000 = Code size (0x190)
+0000 0000 = Data Size (0)
+0010 0000 = Heap size min (0x1000)
+0000 1000 = Heap size max (0x100000)
+0020 0000 = Stack size (0x2000)
+0000 0000 = Bss size (0)
+0000 0000 = Entry point (0)
+0000 4000 = Code link offset (0x400000)
+0000 0000 = Data link offset (0)
+0200 0000 = DllRefTableCount = 2 dlls
+0000 0000 = Export address table offset (0)
+0000 0000 = Export dir count (0)
+7c01 0000 = Text size (0x17c)
+7c00 0000 = Code offset (0x7c)
+0000 0000 = Data offset (0)
+0c02 0000 = Import offset (0x20c)
+5c02 0000 = Code relocation offset (0x25c)
+0000 0000 = Data relocation offset (0)
+5e01 0000 = Priority (0x15e = EPriorityForeground)
+
+Code: from 0x7c (code offset) to 0x20c (import offset). 0x20c-0x7c = 0x190 (code size)
+
+7040 2de9 0140 a0e3 8420 9fe5 0431 a0e1 0310 a0e1 0330 92e7 0000 53e3 0800 000a
+0250 a0e1 0140 84e2 01c0 95e7 0fe0 a0e1 1cff 2fe1 0411 a0e1 0130 95e7 0000 53e3
+f7ff ff1a 1f00 00eb 0060 a0e1 0140 a0e3 4020 9fe5 0431 a0e1 0310 a0e1 0330 92e7
+0000 53e3 0800 000a 0250 a0e1 0140 84e2 01c0 95e7 0fe0 a0e1 1cff 2fe1 0411 a0e1
+0130 95e7 0000 53e3 f7ff ff1a 0600 a0e1 0100 00ea 5c01 4000 6401 4000 7040 bde8
+1eff 2fe1 1eff 2fe1 0040 2de9 1800 00eb 0c00 9fe5 1800 00eb 0000 a0e3 0010 bde8
+1cff 2fe1 6c01 4000 0040 2de9 0cd0 4de2 1d00 00eb 0030 a0e3 0830 8de5 0430 8de5
+0030 8de5 0800 8de2 0410 8de2 0d20 a0e1 0d00 00eb 0800 9de5 0410 9de5 0020 9de5
+e8ff ffeb 0c00 00eb 0cd0 8de2 0040 bde8 1eff 2fe1 1eff 2fe1 b8ff ffea 04c0 9fe5
+00c0 9ce5 1cff 2fe1 7c01 4000 04c0 9fe5 00c0 9ce5 1cff 2fe1 8401 4000 04c0 9fe5
+00c0 9ce5 1cff 2fe1 8001 4000 04c0 9fe5 00c0 9ce5 1cff 2fe1 8801 4000 ffff ffff
+0000 0000 ffff ffff 0000 0000 4865 6c6c 6f20 576f 726c 640a 0000 0000 4900 0000
+6800 0000 0601 0000 ea02 0000 0000 0000
+
+Imports: from 0x20c (import offset) to 0x25c (code relocation offset) = 0x25c-0x20c=0x50
+
+5000 0000 = import size 0x50
+2400 0000 = offset of dll name 0x24 = 36 bytes
+0300 0000 = number of imports
+4900 0000 = import1 0x49
+6800 0000 = import2 0x68
+0601 0000 = import3 0x106
+3900 0000 = offset of dll name 0x39 = 57 bytes
+0100 0000 = number of imports
+ea02 0000 = import1 0x2ea
+4553 544c 4942 5b31 3030 3033 6230 625d 2e44 4c4c 0045 5553 4552 5b31 3030 3033
+3965 355d 2e44 4c4c 0000 0000 = library names in ASCII: “ESTLIB[10003b0b].DLL EUSER[100039e5].DLL”
+
+Code Relocation: from 0x25c (relocation offset) to 0x27b (file end). 0x27b-0x25c=0x1f
+
+1800 0000 = Size of the relocation section 0x18 = 24 bytes
+0700 0000 = number of relocs 7
+0000 = ignore
+0000 = ignore
+1800 = ignore
+0000 = ignore
+9430 = rec1 0x94
+9830 = rec2 0x98
+c430 = rec3 0xc4
+2831 = rec4 0x128
+3831 = rec5 0x138
+4831 = rec6 0x148
+5831 = rec7 0x158
+0000 = ignore
+```
+
+PETRAN analysis:
 ```
 petran HELLO.EXE
 
