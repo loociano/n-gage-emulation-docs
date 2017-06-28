@@ -16,6 +16,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
     - [UIDs](#uids)
 - [Tutorials](#tutorials)
 - [References](#references)
+- [Books](#books)
 - [Thanks](#thanks)
 
 ## Emulators and Tools
@@ -250,14 +251,24 @@ gers: UID1, UID2 and UID3.
 
 ## References
 
-* [N-Gage – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
-* [N-Gage QD – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
-* [List of N-Gage games – Wikipedia](https://en.wikipedia.org/wiki/List_of_N-Gage_games)
+### Books
+* [Jo Stichbury. Symbian OS Explained. Effective C++ programming for Smartphones, 2005](https://books.google.ie/books?id=EyrSpjsIFNAC&lpg=PP1&dq=isbn%3A0470021314&pg=PP1#v=onepage&q&f=false)
+* [Jane Sales. Symbian OS Internals. Real-time Kernel Programming, 2005](https://books.google.ie/books?id=AqS5W0MJOI0C&lpg=PP1&dq=isbn%3A0470025255&pg=PP1#v=onepage&q&f=false)
+
+### Symbian
+* [Symbian OS v6.1 Edition for C++. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Product/Generic/index.html)
+* [Symbian OS v6.1 Example Code. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/examples/Examples/index.html)
+
+### Various authors
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
 * [@mrRosset's Symbian Archive](https://mrrosset.github.io/Symbian-Archive/)
 * [EPOC32 File formats](http://www.koeniglich.de/epoc32_fileformats.txt)
-* [Symbian OS v6.1 Edition for C++. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Product/Generic/index.html)
-* [Symbian OS v6.1 Example Code. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/examples/Examples/index.html)
+* [Shub-Nigurrath (Arteam). Primer on Reversing Symbian S60 Applications, 2007](http://185.62.190.110/accessroot/arteam/site/download.php?view.194)
+
+### Wikipedia
+* [N-Gage – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_(device))
+* [N-Gage QD – Wikipedia](https://en.wikipedia.org/wiki/N-Gage_QD)
+* [List of N-Gage games – Wikipedia](https://en.wikipedia.org/wiki/List_of_N-Gage_games)
 
 ## Thanks
 
