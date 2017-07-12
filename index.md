@@ -5,7 +5,8 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 
 ## Contents
 
-- [Emulators and Tools](#emulators-and-tools)
+- [Emulators](#emulators)
+- [Tools](#tools)
 - [System Specs](#system-specs)
 - [Memory Map](#memory-map)
 - [S60](#s60)
@@ -19,16 +20,19 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 - [Books](#books)
 - [Thanks](#thanks)
 
-## Emulators and Tools
-
+## Emulators
 * [NGEmu](https://github.com/NGEmu/NGEmu) by [@tambry](https://github.com/tambry): HLE N-Gage emulator written in C++ for Windows
-* [Rusty Starship](https://gitlab.com/tambre/rusty-starship) by [@tambre](https://gitlab.com/tambre): Collection of tools
+
+## Tools
+* [Rusty Starship](https://gitlab.com/tambre/rusty-starship) by [@tambre](https://gitlab.com/tambre): a collection of tools
+  * SDumper: dumps the ROM and the BOOT sector of the device.
 * [Deark](http://entropymine.com/deark/) to extract and convert images to `.png` from an multibitmap `.mbm` or `.aif`
 * [RomBrowser](https://github.com/Florin9doi/rombrowser) by [@Florin9doi](https://github.com/Florin9doi): to display the content of a dump of the rom.
 * [E32Explorer](https://github.com/mrRosset/E32Explorer) by [@mrRosset](https://github.com/mrRosset): to read E32Image and partially read TRomImage
 * S60 SDK Utilities:
   * `bmconv` to extract images from a multibitmap `.mbm`
   * `petran` to read E32Image
+* [FExplorer](http://gosymbian.com) by Dominique Hugo: to explore the filesystem and run `.exe` on S60.
 
 ## System Specs
 
