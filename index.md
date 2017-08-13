@@ -78,8 +78,13 @@ Virtual Address Map:
 
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip). Minimum requirements:
   * [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html)
-  * Microsoft Visual C++ 6.0
   * [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
+  * nmake any version from Visual Studio
+ 
+### IDE
+
+* Carbide C++
+* Microsoft Visual C++ 6.0
 
 ## File Formats
 
