@@ -24,7 +24,7 @@ _Work in Progress by [@loociano](https://github.com/loociano), last update on Ju
 * [NGEmu](https://github.com/NGEmu/NGEmu) by [@tambry](https://github.com/tambry): HLE N-Gage emulator written in C++ for Windows
 
 ## Tools
-* [Rusty Starship](https://gitlab.com/tambre/rusty-starship) by [@tambre](https://gitlab.com/tambre): a collection of tools
+* [Rusty Starship](https://gitlab.com/tambre/rusty_starship) by [@tambre](https://gitlab.com/tambre): a collection of tools
   * SDumper: dumps the ROM and the BOOT sector of the device.
 * [Deark](http://entropymine.com/deark/) to extract and convert images to `.png` from an multibitmap `.mbm` or `.aif`
 * [RomBrowser](https://github.com/Florin9doi/rombrowser) by [@Florin9doi](https://github.com/Florin9doi): to display the content of a dump of the rom.
@@ -79,7 +79,7 @@ Virtual Address Map:
 * [S60 SDK 1.2 for Windows](http://urjaman.ddns.net/sissshare/s60-2ndEd-dev/1stEd/nS60_sdk_v1_2.zip). Minimum requirements:
   * [Java 2 Runtime Environment 1.3.1](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase13-419413.html)
   * [Active Perl 5.1.8](https://sourceforge.net/p/wpbdc/website/ci/2ee71367b1932176847e8f969af85168d94c89f4/tree/Download/ActivePerl-5.6.1.635-MSWin32-x86.msi?format=raw)
-  * nmake any version from Visual Studio
+  * any version of `nmake` from Visual Studio
  
 ### IDE
 
