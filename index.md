@@ -267,8 +267,8 @@ gers: UID1, UID2 and UID3.
 * [Jane Sales. Symbian OS Internals. Real-time Kernel Programming, 2005](https://books.google.ie/books?id=AqS5W0MJOI0C&lpg=PP1&dq=isbn%3A0470025255&pg=PP1#v=onepage&q&f=false)
 
 ### Symbian
-* [Symbian OS v6.1 Edition for C++. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/developerlibrary/Product/Generic/index.html)
-* [Symbian OS v6.1 Example Code. Symbian Developer Library](http://n-gage.org/symbian-sdk-doc/6.1/examples/Examples/index.html)
+* [Symbian OS v6.1 Edition for C++. Symbian Developer Library](http://n-gage.loociano.com/symbian-sdk-doc/6.1/developerlibrary/Product/Generic/index.html)
+* [Symbian OS v6.1 Example Code. Symbian Developer Library](http://n-gage.loociano.com/symbian-sdk-doc/6.1/examples/Examples/index.html)
 
 ### Various authors
 * [NGEmu Wiki](https://github.com/NGEmu/NGEmu/wiki)
